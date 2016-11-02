@@ -1,0 +1,19 @@
+{
+  "name": "beenverified",
+  "version": "1.0.0",
+  "description": "BeenVerified Code Challenge - Build a Homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keith-Wallace/BeenVerified.git"
+  },
+  "author": "Keith Wallace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keith-Wallace/BeenVerified/issues"
+  },
+  "homepage": "https://github.com/Keith-Wallace/BeenVerified#readme"
+}
