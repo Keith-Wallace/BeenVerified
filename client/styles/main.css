@@ -1,0 +1,23 @@
+.jumbotron {
+  color: rgba(255, 255, 255, 1);
+}
+
+.header-bg-img {
+  background: url('../assets/office.jpeg') no-repeat;
+}
+
+.header-transparent-layer {
+  background: rgba(87, 27, 179, 0.6);
+  /*background-color: #5b1bb5;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+
+.sub-head-area {
+  background: rgba(87, 27, 179, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.sub-head-area img {
+  width: 80%;
+}
