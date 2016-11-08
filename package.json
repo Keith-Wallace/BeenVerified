@@ -2,8 +2,10 @@
   "name": "beenverified",
   "version": "1.0.0",
   "description": "BeenVerified Code Challenge - Build a Homepage",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "stylus": "stylus -w client/styles/main.styl -o client/styles/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,7 @@
     "express": "^4.14.0",
     "jquery": "^1.9.1",
     "nodemon": "^1.11.0",
-    "request": "^2.78.0"
+    "request": "^2.78.0",
+    "stylus": "^0.54.5"
   }
 }

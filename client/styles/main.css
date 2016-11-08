@@ -1,0 +1,48 @@
+/* NAVBAR //////////////////////////////////////////////////////// */
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+.navbar-default {
+  background: #5b1bb5;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #5b1bb5;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-toggle {
+  border: none;
+  border-radius: none;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: none;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+/* JUMBOTRON ///////////////////////////////////////////////////// */
+.jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: url("../assets/office.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron .container {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(87,27,179,0.6);
+}
+.jumbotron .btn-primary {
+  background-color: #5b1bb5;
+  border-color: #5b1bb5;
+}
