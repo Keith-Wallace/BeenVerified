@@ -89,9 +89,14 @@ h5 {
 /*background-color: rgba(87, 27, 179, 0.6);*/
   width: 100%;
 }
+.jumbotron .container p {
+  font-weight: 400;
+}
 .jumbotron .btn-primary {
   background-color: #5b1bb5;
   border-color: #5b1bb5;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* SUBHEAD /////////////////////////////////////////////////////// */
 .subhead {
