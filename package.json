@@ -4,13 +4,9 @@
   "description": "BeenVerified Code Challenge - Build a Homepage",
   "main": "server.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "nodemon ./server.js"
-=======
     "start": "node server.js",
     "stylus": "stylus -w client/styles/main.styl -o client/styles/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 880691ccdc5be09eda6eb2493c50f8ff899e81ac
   },
   "repository": {
     "type": "git",
@@ -23,12 +19,6 @@
   },
   "homepage": "https://github.com/Keith-Wallace/BeenVerified#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "bootstrap": "^3.3.7",
-    "express": "^4.14.0",
-    "jquery": "^3.1.1",
-    "nodemon": "^1.11.0"
-=======
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.7",
     "express": "^4.14.0",
@@ -36,6 +26,5 @@
     "nodemon": "^1.11.0",
     "request": "^2.78.0",
     "stylus": "^0.54.5"
->>>>>>> 880691ccdc5be09eda6eb2493c50f8ff899e81ac
   }
 }
