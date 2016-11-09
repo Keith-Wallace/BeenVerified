@@ -24,6 +24,10 @@ body {
   text-align: center;
 }
 
+h2 {
+  font-size: 42px;
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
@@ -41,12 +45,22 @@ h1, h2, h3, h4, h5 {
   padding: 0 10px;
 }
 
+.fa-2x {
+  font-size: 1.5em;
+}
+
 /* NAVBAR //////////////////////////////////////////////////////// */
 .navbar {
   margin-bottom: 0;
   border: none;
 }
-.navbar-default {
+
+.navbar-desktop {
+  display: none;
+  background-color: transparent;
+}
+
+.navbar-fixed-top {
   background: bg-dark-purple;
 }
 
@@ -84,6 +98,13 @@ h1, h2, h3, h4, h5 {
   padding-top: 40px;
   padding-bottom: 0;
   margin-bottom: 0;
+  /*background-image: url(../assets/office.jpeg);
+  background-size: cover;
+  background-position: center;*/
+  background-color: rgba(87, 27, 179, 0.6);
+}
+
+.jumbotron-bg-img {
   background-image: url(../assets/office.jpeg);
   background-size: cover;
   background-position: center;
@@ -91,7 +112,7 @@ h1, h2, h3, h4, h5 {
 
 .jumbotron .container {
   color: text-white;
-  background-color: rgba(87, 27, 179, 0.6);
+  /*background-color: rgba(87, 27, 179, 0.6);*/
   width: 100%;
 }
 
@@ -103,6 +124,14 @@ h1, h2, h3, h4, h5 {
 /* SUBHEAD /////////////////////////////////////////////////////// */
 .subhead {
   background-color: bg-dark-purple;
+}
+
+.subhead .container .row div:first-child h2 {
+  display: block;
+}
+
+.subhead .container .row div:last-child h2 {
+  display: none;
 }
 
 .subhead img {
@@ -223,10 +252,6 @@ h1, h2, h3, h4, h5 {
   background-color: bg-grey-black;
 }
 
-.contact-form {
-
-}
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -285,8 +310,87 @@ footer li a {
 footer .container .copyright {
   color: text-dark-grey;
   margin-top: 20px;
-  padding-top:10px;
+  padding-top: 10px;
   border-top: 1px solid text-dark-grey;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .subhead img {
+    width: 75%;
+  }
+
+  .subhead .container .row div:last-child {
+    text-align: left;
+  }
+
+  .subhead .container .row div:first-child h2 {
+    display: none;
+  }
+
+  .subhead .container .row div:last-child h2 {
+    display: block;
+  }
+
+  .services .container > p,
+  .jumbotron .container > p,
+  .team .container > p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .services .container > p {
+    color: text-grey;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-desktop {
+    display: block;
+  }
+
+  .navbar-fixed-top {
+    display: none;
+  }
+
+  .container-fluid,
+  .jumbotron .container,
+  .container {
+    width: 1024px;
+  }
+
+  .jumbotron-bg-img {
+    background-position: initial;
+  }
+
+  .jumbotron {
+    padding-top: 0;
+  }
+
+  .jumbotron .container {
+    padding-top: 10%;
+    padding-bottom: 22%;
+  }
+
+  .jumbotron .container > * {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .subhead img {
+    width: 100%;
+  }
+
+  .subhead .container .row div:last-child {
+    text-align: left;
+  }
+
+  .subhead .container .row div:first-child h2 {
+    display: none;
+  }
+
+  .subhead .container .row div:last-child h2 {
+    display: block;
+  }
 }
 
 

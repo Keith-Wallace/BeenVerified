@@ -10,6 +10,9 @@ body {
   padding-bottom: 40px;
   text-align: center;
 }
+h2 {
+  font-size: 42px;
+}
 h1,
 h2,
 h3,
@@ -28,12 +31,19 @@ h5 {
   color: #5b1bb5;
   padding: 0 10px;
 }
+.fa-2x {
+  font-size: 1.5em;
+}
 /* NAVBAR //////////////////////////////////////////////////////// */
 .navbar {
   margin-bottom: 0;
   border: none;
 }
-.navbar-default {
+.navbar-desktop {
+  display: none;
+  background-color: transparent;
+}
+.navbar-fixed-top {
   background: #5b1bb5;
 }
 .navbar-default .navbar-brand {
@@ -64,13 +74,19 @@ h5 {
   padding-top: 40px;
   padding-bottom: 0;
   margin-bottom: 0;
+/*background-image: url(../assets/office.jpeg);
+  background-size: cover;
+  background-position: center;*/
+  background-color: rgba(87,27,179,0.6);
+}
+.jumbotron-bg-img {
   background-image: url("../assets/office.jpeg");
   background-size: cover;
   background-position: center;
 }
 .jumbotron .container {
   color: #fff;
-  background-color: rgba(87,27,179,0.6);
+/*background-color: rgba(87, 27, 179, 0.6);*/
   width: 100%;
 }
 .jumbotron .btn-primary {
@@ -80,6 +96,12 @@ h5 {
 /* SUBHEAD /////////////////////////////////////////////////////// */
 .subhead {
   background-color: #5b1bb5;
+}
+.subhead .container .row div:first-child h2 {
+  display: block;
+}
+.subhead .container .row div:last-child h2 {
+  display: none;
 }
 .subhead img {
   width: 50%;
@@ -226,4 +248,66 @@ footer .container .copyright {
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid #7a7a7a;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .subhead img {
+    width: 75%;
+  }
+  .subhead .container .row div:last-child {
+    text-align: left;
+  }
+  .subhead .container .row div:first-child h2 {
+    display: none;
+  }
+  .subhead .container .row div:last-child h2 {
+    display: block;
+  }
+  .services .container > p,
+  .jumbotron .container > p,
+  .team .container > p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .services .container > p {
+    color: #666;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar-desktop {
+    display: block;
+  }
+  .navbar-fixed-top {
+    display: none;
+  }
+  .container-fluid,
+  .jumbotron .container,
+  .container {
+    width: 1024px;
+  }
+  .jumbotron-bg-img {
+    background-position: initial;
+  }
+  .jumbotron {
+    padding-top: 0;
+  }
+  .jumbotron .container {
+    padding-top: 10%;
+    padding-bottom: 22%;
+  }
+  .jumbotron .container > * {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .subhead img {
+    width: 100%;
+  }
+  .subhead .container .row div:last-child {
+    text-align: left;
+  }
+  .subhead .container .row div:first-child h2 {
+    display: none;
+  }
+  .subhead .container .row div:last-child h2 {
+    display: block;
+  }
 }
