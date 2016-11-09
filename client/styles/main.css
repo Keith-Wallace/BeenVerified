@@ -1,3 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+body {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+.container h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* ICONS ///////////////////////////////////////////////////////// */
+.services i,
+.team i {
+  color: #5b1bb5;
+  padding: 0 10px;
+}
 /* NAVBAR //////////////////////////////////////////////////////// */
 .navbar {
   margin-bottom: 0;
@@ -31,18 +61,169 @@
 }
 /* JUMBOTRON ///////////////////////////////////////////////////// */
 .jumbotron {
-  padding-top: 0;
+  padding-top: 40px;
   padding-bottom: 0;
+  margin-bottom: 0;
   background-image: url("../assets/office.jpeg");
   background-size: cover;
   background-position: center;
 }
 .jumbotron .container {
-  text-align: center;
   color: #fff;
   background-color: rgba(87,27,179,0.6);
+  width: 100%;
 }
 .jumbotron .btn-primary {
   background-color: #5b1bb5;
   border-color: #5b1bb5;
+}
+/* SUBHEAD /////////////////////////////////////////////////////// */
+.subhead {
+  background-color: #5b1bb5;
+}
+.subhead img {
+  width: 50%;
+}
+.subhead .btn-primary {
+  background-color: #5b1bb5;
+  border-color: #fff;
+}
+/* SERVICES ////////////////////////////////////////////////////// */
+.services {
+  background: #1f1f1f;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.services .row {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.services p {
+  margin: 0 0 80px;
+}
+.services .row div p {
+  color: #666;
+}
+.services .row div:last-child p {
+  margin: 0 0 10px;
+}
+/* TEAM ////////////////////////////////////////////////////////// */
+.team {
+  color: #000;
+}
+.team .container > p {
+  margin: 0 0 80px;
+}
+.team .row > div:not(:last-child) {
+  margin-bottom: 80px;
+}
+.team .headshot {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.team .headshot img {
+  display: inline;
+  height: 100%;
+  width: auto;
+}
+.team .team-name {
+  font-size: 28px;
+  color: #5b1bb5;
+}
+.team .team-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #a143a1;
+}
+.team .row a {
+  text-decoration: none;
+  color: #5b1bb5;
+}
+.team .row div:last-child p {
+  margin: 0 0 10px;
+}
+/* CLIENTS /////////////////////////////////////////////////////// */
+.clients {
+  background-color: #5b1bb5;
+}
+.clients .container {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer-svg,
+.footer-svg-sm {
+  width: 75px;
+  vertical-align: middle;
+}
+.footer-svg-sm {
+  width: 60px;
+}
+.clients ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0;
+}
+.clients li {
+  display: inline;
+  padding: 0 20px;
+}
+/* CONTACT /////////////////////////////////////////////////////// */
+.contact {
+  background-color: #212121;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+}
+.contact-form .btn-default {
+  color: #7a7a7a;
+  background-color: #212121;
+  border-color: #7a7a7a;
+}
+.contact-company {
+  text-align: left;
+  color: #7a7a7a;
+}
+.contact-company h4 {
+  color: #fff;
+}
+.contact-company a {
+  color: #7a7a7a;
+  text-decoration: none;
+  margin-right: 10px;
+}
+/* FOOTER //////////////////////////////////////////////////////// */
+footer {
+  background-color: #1f1f1f;
+}
+footer .container {
+  text-align: left;
+}
+footer .container .row div {
+  min-height: 140px;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer li a {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+footer .container .copyright {
+  color: #7a7a7a;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #7a7a7a;
 }

@@ -1,9 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
 text-white = #ffffff;
-bg-dark-purple = #5b1bb5;
+text-grey = #666666;
+text-dark-grey = #7a7a7a;
+text-light-purple = #a143a1;
+
 bg-white = #ffffff;
+bg-dark-purple = #5b1bb5;
+bg-grey = #333333;
+bg-grey-black = #212121;
+bg-black-grey = #1f1f1f;
 
 body {
-  /*color: text-white;*/
+  color: text-white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
+
+.container h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ICONS ///////////////////////////////////////////////////////// */
+.services i,
+.team i {
+  color: bg-dark-purple;
+  padding: 0 10px;
 }
 
 /* NAVBAR //////////////////////////////////////////////////////// */
@@ -21,7 +56,7 @@ body {
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-    background-color: bg-dark-purple;
+  background-color: bg-dark-purple;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -46,17 +81,18 @@ body {
 
 /* JUMBOTRON ///////////////////////////////////////////////////// */
 .jumbotron {
-  padding-top: 0;
+  padding-top: 40px;
   padding-bottom: 0;
+  margin-bottom: 0;
   background-image: url(../assets/office.jpeg);
   background-size: cover;
   background-position: center;
 }
 
 .jumbotron .container {
-  text-align: center;
   color: text-white;
   background-color: rgba(87, 27, 179, 0.6);
+  width: 100%;
 }
 
 .jumbotron .btn-primary {
@@ -64,7 +100,194 @@ body {
   border-color: bg-dark-purple;
 }
 
+/* SUBHEAD /////////////////////////////////////////////////////// */
+.subhead {
+  background-color: bg-dark-purple;
+}
 
+.subhead img {
+  width: 50%;
+}
+
+.subhead .btn-primary {
+  background-color: bg-dark-purple;
+  border-color: text-white;
+}
+
+/* SERVICES ////////////////////////////////////////////////////// */
+.services {
+  background: bg-black-grey;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.services .row {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.services p {
+  margin: 0 0 80px;
+}
+
+.services .row div p {
+  color: text-grey;
+}
+
+.services .row div:last-child p {
+  margin: 0 0 10px;
+}
+
+/* TEAM ////////////////////////////////////////////////////////// */
+.team {
+  color: #000;
+}
+
+.team .container > p {
+  margin: 0 0 80px;
+}
+
+.team .row > div:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.team .headshot {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.team .headshot img {
+  display: inline;
+  height: 100%;
+  width: auto;
+}
+
+.team .team-name {
+  font-size: 28px;
+  color: bg-dark-purple;
+}
+
+.team .team-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: text-light-purple;
+}
+
+.team .row a {
+  text-decoration: none;
+  color: bg-dark-purple;
+}
+
+.team .row div:last-child p {
+  margin: 0 0 10px;
+}
+
+/* CLIENTS /////////////////////////////////////////////////////// */
+.clients {
+  background-color: bg-dark-purple;
+}
+
+.clients .container {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer-svg,
+.footer-svg-sm {
+  width: 75px;
+  vertical-align: middle;
+}
+
+.footer-svg-sm {
+  width: 60px;
+}
+
+.clients ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.clients li {
+  display: inline;
+  padding: 0 20px;
+}
+
+/* CONTACT /////////////////////////////////////////////////////// */
+.contact {
+  background-color: bg-grey-black;
+}
+
+.contact-form {
+
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: bg-grey;
+}
+
+.contact-form .btn-default {
+  color: text-dark-grey
+  background-color: bg-grey-black;
+  border-color: text-dark-grey;
+}
+
+.contact-company {
+  text-align: left;
+  color: text-dark-grey;
+}
+
+.contact-company h4 {
+  color: text-white;
+}
+
+.contact-company a {
+  color: text-dark-grey;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* FOOTER //////////////////////////////////////////////////////// */
+footer {
+  background-color: bg-black-grey;
+}
+
+footer .container {
+  text-align: left;
+}
+
+footer .container .row div {
+  min-height: 140px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li a {
+  color: text-dark-grey;
+  text-decoration: none;
+}
+
+footer .container .copyright {
+  color: text-dark-grey;
+  margin-top: 20px;
+  padding-top:10px;
+  border-top: 1px solid text-dark-grey;
+}
 
 
 
