@@ -25,7 +25,7 @@ This is a Front-End web application only.
 - Bootstrap 3 - Uses three break points (Mobile, Tablet, and Desktop)
 - Node.js & Express.js server
 - Stylus used for CSS
-- Font Awesome sued for SVG Icons
+- Font Awesome used for SVG Icons
 - Google Fonts
 
 ### Run on Local Machine
