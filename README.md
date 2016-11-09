@@ -17,3 +17,27 @@ Referencing the provided test screenshots and assets, create a responsive homepa
 - All sections must be included in your homepage.
 - Please make sure that you get all of the core requirements finished before moving on to the extras.
 - The extra suggestions are optional and are there for you if you want to play around a bit or show us some cool stuff. Have fun with it!
+
+## Developer Notes
+This is a Front-End web application only.
+
+### Tech Stack
+- Bootstrap 3 - Uses three break points (Mobile, Tablet, and Desktop)
+- Node.js & Express.js server
+- Stylus used for CSS
+- Font Awesome sued for SVG Icons
+- Google Fonts
+
+### Run on Local Machine
+Fork or clone this repo to your local machine and run the following command lines:
+Install dependencies
+```
+$ ~/BeenVerified: npm install
+```
+Run localhost
+```
+$ ~/BeenVerified: nodemon
+```
+
+### View Working Example on Heroku
+[https://been-verified.herokuapp.com/](https://been-verified.herokuapp.com/)
